@@ -120,8 +120,8 @@ class Pet{
             } else {
                 setEnergy(getEnergyMax());
                 setHungry(getHungry() - 1);
-                age++;
-                //age = age + (getEnergyMax()-getEnergy());
+                //age++;
+                age = age + (getEnergyMax()-getEnergy());
             }
         } else {
             System.out.println("fail: pet esta morto");
