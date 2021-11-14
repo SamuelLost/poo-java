@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Solver {
-
     public static void main(String[] args) {
         ArrayList<Integer> vet = new ArrayList<Integer>();
         Scanner scan = new Scanner(System.in);
