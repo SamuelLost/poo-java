@@ -30,7 +30,7 @@ class Manual {
         //case tomar banho
         pet.shower();
         System.out.println(pet);
-        //E:17/20, S:8/10, L:15/15, D:2, I:10
+        //E:17/20, S:8/10, L:15/15, D:2, I:6
 
         //case dormir sem sono
         pet.sleep();
