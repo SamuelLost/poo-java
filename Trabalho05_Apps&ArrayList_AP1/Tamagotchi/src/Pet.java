@@ -217,17 +217,17 @@ class Pet{
      * pelo menos 5 unidades de energia, caso contrário ele não irá dormir
      * e uma mensagem será impressa.
      * Ao dormir, o pet tem a energia maximizada, perde 1 saciedade,
-     * limpeza não muda e idade aumenta o valor de turnos que dormiu.
+     * limpeza não muda e idade aumenta a cada vez que o comando "sleep"
+     * é digitado.
      */
     public void sleep() {
         if(testAlive()) {
             if((getEnergyMax() - getEnergy()) < 5) {
                 System.out.println("fail: nao esta com sono");
             } else {
-                age = age + (getEnergyMax() - getEnergy());
                 setEnergy(getEnergyMax());
                 setHungry(getHungry() - 1);
-                //age++;
+                age++;
                 
             }
         } else {
