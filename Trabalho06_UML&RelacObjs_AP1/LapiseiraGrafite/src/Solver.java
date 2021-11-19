@@ -1,3 +1,6 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 class Solver{
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
