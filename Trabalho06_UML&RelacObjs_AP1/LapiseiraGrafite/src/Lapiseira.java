@@ -2,9 +2,9 @@ import java.util.Locale;
 
 class Lapiseira {
     
-    float calibre; //espessura do grafite
-    Grafite grafite; //instância da Classe Grafite
-    final int TAMANHO_MIN = 10;
+    private float calibre; //espessura do grafite
+    private Grafite grafite; //instância da Classe Grafite
+    private final int TAMANHO_MIN = 10;
 
     /**
      * Construtor da classe lapiseira
