@@ -1,7 +1,7 @@
 class Grafite {
-    float calibre; //espessura do grafite
-    String dureza; //dureza do grafite
-    int tamanho; //tamanho
+    private float calibre; //espessura do grafite
+    private String dureza; //dureza do grafite
+    private int tamanho; //tamanho
 
     /**
      * Construtor da classe
