@@ -11,7 +11,7 @@ class Solver{
             if(ui[0].equals("end")) {
                 break;
             } else if(ui[0].equals("help")) {
-                System.out.println("init _calibre; add _calibre _dureza _tamanho; remove; pull; write _folhas");
+                System.out.println("init _calibre; add _calibre _dureza _tamanho; remove; pull; write");
             } else if(ui[0].equals("init")) { //calibre
                 lapiseira = new Lapiseira(Float.parseFloat(ui[1]));
             } else if(ui[0].equals("add")) {//calibre dureza tamanho
