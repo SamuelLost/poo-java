@@ -1,16 +1,19 @@
 public class Client {
-    private String id;
-    private String fone;
+    private String id; //id do cliente
+    private String fone; //telefone do cliente
 
+    /**
+     * Construtor do cliente
+     * @param id - identificação do cliente
+     * @param fone - telefone do cliente
+     */
     public Client(String id, String fone) {
         this.id = id;
         this.fone = fone;
     }
-
-    public String toString() {
-        return id + ":" + fone;
-    }
-
+    /**
+     * Métodos getters e setters dos atributos
+     */
     public String getId() {
         return id;
     }
@@ -25,5 +28,12 @@ public class Client {
     
     public void setFone(String fone) {
         this.fone = fone;
+    }
+
+    /**
+     * toString para imprimir o objeto
+     */
+    public String toString() {
+        return id + ":" + fone;
     }
 }
