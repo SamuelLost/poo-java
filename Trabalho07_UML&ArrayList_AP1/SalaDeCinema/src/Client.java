@@ -11,19 +11,19 @@ public class Client {
         return id + ":" + fone;
     }
 
-    String getId() {
+    public String getId() {
         return id;
     }
 
-    void setId(String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    String getFone() {
+    public String getFone() {
         return fone;
     }
     
-    void setFone(String fone) {
+    public void setFone(String fone) {
         this.fone = fone;
     }
 }
