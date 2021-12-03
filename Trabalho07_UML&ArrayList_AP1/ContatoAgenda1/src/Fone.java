@@ -8,7 +8,14 @@ class Fone {
 
     //verifica se o número é um número de telefone válido
     public static boolean validate(String number) {
-        return false;
+        String validos = "0123456789().";
+
+        for(int i = 0; i < number.length(); i++) {
+            if(validos.indexOf(number.charAt(i)) == -1) {
+                return false;
+            }
+        }
+        return true;
     }
 
     //O resultado deve ficar assim
