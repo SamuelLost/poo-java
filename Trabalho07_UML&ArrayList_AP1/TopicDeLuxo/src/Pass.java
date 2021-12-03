@@ -8,8 +8,8 @@ public class Pass {
      * @param age - idade
      */
     public Pass(String name, int age) {
-        this.name = name;
-        this.age = age;
+        setName(name);
+        setAge(age);
     }
 
     /**
