@@ -8,8 +8,8 @@ public class Client {
      * @param fone - telefone do cliente
      */
     public Client(String id, String fone) {
-        this.id = id;
-        this.fone = fone;
+        setId(id);
+        setFone(fone);
     }
     /**
      * Métodos getters e setters dos atributos
