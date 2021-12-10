@@ -7,16 +7,28 @@ public class Financas {
     private int nextId;
     //A lista de operações realizadas
     private List<Operacao> extrato;
-    private int saldo;
+    private int saldo; //saldo
+
+    /**
+     * Construtor padrão da classe.
+     */
     public Financas() {
         nextId = 0;
         extrato = new ArrayList<>();
         saldo = 0;
 
     }
+
     //Adiciona value ao saldo
     //Crie operação e adiciona ao vetor de operações
     //Incrementa o nextId
+    /**
+     * Método addOperacao, de acordo com a label, uma 
+     * operação é feita e a operação é adicionada na
+     * lista de operações
+     * @param label - label da operação
+     * @param value - valor referente a operação
+     */
     public void addOperacao(Label label, int value) {
         if(label == Label.abertura) {
             saldo = value;
@@ -40,12 +52,23 @@ public class Financas {
             nextId++;
         }
     }
+
+    /**
+     * Métodos GETTERS
+     */
     public int getSaldo() {
         return saldo;
     }
     public List<Operacao> getExtrato() {
         return extrato;
     }
+    /**
+     * Usando o método subList() da classe List, com ela é possível
+     * pegar uma parte específica da Lista completa, nesse caso as
+     * N ultimas operações. 
+     * @param qtdOp - qntd de operações
+     * @return - a sublista
+     */
     public List<Operacao> getExtrato(int qtdOp) {
         return extrato.subList(extrato.size() - qtdOp, extrato.size());
     }
