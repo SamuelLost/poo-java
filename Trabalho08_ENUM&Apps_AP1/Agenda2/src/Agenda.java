@@ -64,6 +64,6 @@ class Agenda {
         for(Contact c : contacts) {
             out += c.toString() + "\n";
         }
-        return out;
+        return out.trim();
     }
 }

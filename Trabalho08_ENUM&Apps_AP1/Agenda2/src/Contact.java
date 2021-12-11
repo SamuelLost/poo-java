@@ -18,8 +18,11 @@ public class Contact {
         } else {
             setName("");
         }
+        this.fones = new ArrayList<>();
         if(fones != null) {
-            this.fones = new ArrayList<>();
+            for (Fone f : fones) {
+                addFone(f);
+            }
         }
         
     }
