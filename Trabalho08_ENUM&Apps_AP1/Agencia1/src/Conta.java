@@ -51,14 +51,14 @@ public class Conta {
      * @return true caso tenha sido possível extornar, false caso contrário. 
      */
     public boolean extornar(int indice) {
-        if(financas.getExtrato().get(indice).getLabel() != Label.tarifa) {
-            System.out.println("fail: indice " + indice + " nao e tarifa");
-            return false;
-        } else if(indice < 0 || indice > financas.getExtrato().size()) {
+        if(indice < 0 || indice > financas.getExtrato().size()) {
             System.out.println("fail: indice " + indice + " invalido");
             return false;
         }
-
+        if(financas.getExtrato().get(indice).getLabel() != Label.tarifa) {
+            System.out.println("fail: indice " + indice + " nao e tarifa");
+            return false;
+        } 
         financas.addOperacao(Label.extorno, financas.getExtrato().get(indice).getValue());
         return true;
     }
