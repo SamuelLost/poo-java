@@ -44,9 +44,15 @@ public class Contact {
 
     }
     //Se o índice existir no ArrayList, remova o telefone com esse índice
+    /**
+     * Removendo um número de acordo com o índice, se o
+     * índice for menor que zero ou maior que o tamanho
+     * da lista não é possível remover.
+     * @param index - indice do número a ser removido
+     */
     public void rmFone(int index) {
         if(index < 0 || index > fones.size()) {
-            System.out.println("indice nao existe");
+            System.out.println("fail: indice nao existe");
             return;
         }
         fones.remove(index);
@@ -79,6 +85,11 @@ public class Contact {
     }
     //limpe a lista de fones
     //utilize o addFone para adicionar apenas os fones válidos
+    /**
+     * Método setFones, reinicializa a lista de telefones
+     * que já tinha e adiciona apenas os números válidos.
+     * @param fones - lista de telefones
+     */
     public void setFones(List<Fone> fones) {
         this.fones = new ArrayList<>();
         if(fones != null) {
