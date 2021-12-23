@@ -8,10 +8,11 @@ public class ContactStar extends Contact {
     //contrutor default
     public ContactStar(String name, List<Fone> fones, boolean star) {
         super(name, fones);
-        this.star = star;
+        setStar(star);
     }
     //muda o prefixo e o valor de star
     public void setStar(boolean value) {
+        super.prefix = (value) ? "@" : "-";
         star = value;
     }
     public boolean getStar() {
