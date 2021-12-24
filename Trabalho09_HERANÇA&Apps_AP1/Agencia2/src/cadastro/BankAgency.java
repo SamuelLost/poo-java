@@ -75,7 +75,7 @@ public class BankAgency {
         client.addAccount(cp);
         this.accounts.put(this.nextAccountId++, cp);
 
-        clients.put(clientId, client); 
+        this.clients.put(clientId, client); 
     }
 
     //obtem o cliente e invoca as ações

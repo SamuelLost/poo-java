@@ -13,7 +13,7 @@ public class Client {
      */
     public Client(String clientId) {
         setClientId(clientId);
-        accounts = new ArrayList<>();
+        this.accounts = new ArrayList<>();
     }
 
     /**
@@ -22,7 +22,7 @@ public class Client {
      */
     public void addAccount(Account account) {
         if(account != null) {
-            accounts.add(account);
+            this.accounts.add(account);
         }
     }
 
@@ -67,7 +67,7 @@ public class Client {
         this.accounts = new ArrayList<>();
         if(accounts != null) {
             for (Account account : accounts) {
-                addAccount(account);
+                this.addAccount(account);
             }
         }
     }
