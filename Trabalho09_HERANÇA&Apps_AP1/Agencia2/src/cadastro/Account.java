@@ -30,6 +30,7 @@ public abstract class Account {
     public void deposit(float value) {
         if(value > 0) {
             balance += value;
+            return;
         }
         throw new AccountException("fail: valor invalido");
     }
