@@ -18,8 +18,16 @@ public class Contact {
         } else {
             setName("");
         }
-        if(fones != null) {
+        // O erro estava na verificação desse if, estava verificando
+        // se o argumento era diferente de null. Como no caso init é passado null
+        // o programa não entrava na condição e não instanciava o objeto, por isso
+        // lançava a exceção.
+        // O else é apenas um caso especial não tratado pelos comandos shell, quando
+        // já passa uma lista com telefones pelo construtor.
+        if(fones == null) {
             this.fones = new ArrayList<>();
+        } else {
+            this.fones = fones;
         }
         
     }
